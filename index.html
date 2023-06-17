@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <title>Alarm clock</title>
+    
+    <link rel="stylesheet" href="style.css">
+    
+  </head>
+  <body>
+    <div class="container">
+      <div id="clock"></div>
+      <h1 style="color: aqua;">Add Alarm Time</h1>
+      <input
+        onchange="setAlarmTime(this.value)"
+        name="alarmTime"
+        type="datetime-local"
+      />
+      <div class="controls">
+        <button onclick="setAlarm()" class="button set-alarm">Set alarm</button>
+        <button onclick="clearAlarm()" class="button clear-alarm">
+          Clear alarm
+        </button>
+      </div>
+    </div>
+    <script src="alarm.js"></script>
+  </body>
+</html>
